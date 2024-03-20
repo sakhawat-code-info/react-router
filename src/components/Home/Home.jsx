@@ -1,9 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 
 const Home = () => {
     return (
         <div>
-            <h1 className="bg-red-800">Home Page / Main Page</h1>
+            <Header></Header>
+            <div className="h-80">
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
